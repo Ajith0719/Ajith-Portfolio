@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajith Raj Periyasamy | Data Analyst</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #f5c518;
+      transition: width 0.3s;
+    }
+    nav a:hover {
+      color: #f5c518;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000, #222);
+      padding: 5rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid #f5c518;
+      animation: fadeInDown 1s ease;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInUp 1s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+      transition: background 0.5s;
+    }
+    section:hover {
+      background: #1a1a1a;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #f5c518;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #f5c518;
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      transition: transform 0.5s, background 0.5s, box-shadow 0.5s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: #333;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    footer {
+      background: #000;
+      color: #888;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    a {
+      color: #f5c518;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Visualizations</a>
+    <a href="#blog">Blog</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <h1>Ajith Raj Periyasamy</h1>
+    <p>Data Analyst | Business Intelligence | Data Storytelling</p>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a data analyst passionate about transforming data into actionable
+      insights. My expertise includes interactive dashboards, predictive
+      models, and data storytelling that empowers decision-making.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="flex-container">
+      <div class="card"><i class="fab fa-python"></i> Python</div>
+      <div class="card"><i class="fas fa-database"></i> SQL</div>
+      <div class="card"><i class="fas fa-file-excel"></i> Excel</div>
+      <div class="card"><i class="fas fa-chart-line"></i> Power BI</div>
+      <div class="card"><i class="fas fa-chart-pie"></i> Tableau</div>
+      <div class="card">
+        <img src="https://www.r-project.org/Rlogo.png" alt="R logo" style="width:24px;vertical-align:middle;margin-right:8px;">
+        R Studio
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="projects">
+    <h2 class="section-title">Projects &amp; Case Studies</h2>
+    <div class="flex-container">
+      <div class="card">
+        <h3>Sales Insights Dashboard</h3>
+        <p>
+          Visual analytics using Power BI to optimize sales performance across
+          global markets.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Customer Segmentation</h3>
+        <p>Advanced clustering in Python for tailored marketing strategies.</p>
+      </div>
+      <div class="card">
+        <h3>Churn Prediction Model</h3>
+        <p>Predictive modeling to forecast and reduce customer churn.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Data Visualization Gallery</h2>
+    <div class="flex-container">
+      <div class="card">Revenue Trend Analysis</div>
+      <div class="card">Market Segmentation Heatmap</div>
+      <div class="card">Churn Prediction Dashboard</div>
+    </div>
+  </section>
+
+
+
+  <section id="blog">
+    <h2 class="section-title">Blog / Insights</h2>
+    <p>
+      Coming soon: My thoughts on data trends, analytics strategies, and
+      visualization techniques!
+    </p>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="flex-container">
+      <div class="card">
+        "Ajith's expertise in data visualization revolutionized our reporting
+        process." — Manager
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: <a href="mailto:aperiyas@kent.edu">aperiyas@kent.edu</a></p>
+    <p>
+      LinkedIn:
+      <a href="https://linkedin.com/in/pajithraj" target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/pajithraj
+      </a>
+    </p>
+  </section>
+  
